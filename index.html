@@ -1,0 +1,405 @@
+
+<title> - Bem Vindo!  - </title> <script> var repeat=1 // 0 para rolar uma vez, 1 para rolar infinitamente
+var title=document.title
+var leng=title.length
+var start=1
+function titlemove() {
+titl=title.substring(start, leng) + title.substring(0, start)
+document.title=titl
+start++
+if (start==leng+1) {
+start=0
+if (repeat==0)
+return
+}
+setTimeout("titlemove()",140)
+}
+if (document.title)
+titlemove()
+</script>
+	
+
+
+
+<script>
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado")
+var montharray=new
+Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro")
+document.write("<small><font color='#FFFFFF' face='#FFFFFF' size='2'><b>"+dayarray[day]+", "+daym+" de "+montharray[month]+" , "+year+"</b></font></small>")
+</script>
+	
+
+
+
+
+
+
+<center>
+<form method=get action="https://www.facebook.com/Ravengatina">
+<input type=submit value="PERFIL">
+
+
+
+
+
+<p> <body>
+<img src="http://images6.fanpop.com/image/photos/37400000/League-Of-Legends-Poro-league-of-legends-37479860-250-172.gif"/>
+</body> </p>
+
+ 
+<DOCTYPE!> 
+<html>
+  
+<head> 
+
+<title> MyPage </title>
+ 
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<p><h1> <i> <b><font color="White"> Paula Mendonça </i> </b> </h1></p>
+
+<p><h3><i>Rio de Janeiro/ 18/ Gêmeos</i></h3> </font></p>
+
+</head>
+
+
+<body>
+
+<body bgcolor="white">
+
+
+        <font color="white"> <p> <h4> <i>Intimidade é uma palavra de 5 sílabas que quer dizer: “Eis meu coração e minha alma, favor moê-los, fazer deles um hambúrguer e bom apetite. </h4> </p> </i>
+        <p> <h4> <i>Bem, todos morrem um dia, é simples matemática. Nada de novo. A espera é que é um problema.
+        <P> Às vezes é preciso dormir, dormir muito. Não pra fugir, mas pra descansar a alma dos sentimentos. 
+<p>Quem nasceu com a sensibilidade exacerbada sabe quão difícil é engolir a vida.</p>
+     <p> Porque tudo, absolutamente tudo devora a gente. Inteira </p> </i></h4> </font>
+
+        <h3> <font color="white"> - Via Tumblr </h3> </font>
+
+
+
+
+
+<h2> <marquee direction=up <P align="center"><center> <font color=#7B68EE> MY  W O R L D,  MY  R U L E S. . </font></p></marquee> </h2>
+
+
+
+</body> 
+
+</html>
+
+
+<body>
+<img src="https://68.media.tumblr.com/9d08e22d9ad7a378551fba871438a592/tumblr_mtf7g4N3RY1sfu61go1_500.gif"/>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+// <![CDATA[
+var colour="#FFFF99";
+var sparkles=50;
+var x=ox=400;
+var y=oy=300;
+var swide=800;
+var shigh=600;
+var sleft=sdown=0;
+var tiny=new Array();
+var star=new Array();
+var starv=new Array();
+var starx=new Array();
+var stary=new Array();
+var tinyx=new Array();
+var tinyy=new Array();
+var tinyv=new Array();
+window.onload=function() { if (document.getElementById) {
+var i, rats, rlef, rdow;
+for (var i=0; i<sparkles; i++) {
+var rats=createDiv(3, 3);
+rats.style.visibility="hidden";
+document.body.appendChild(tiny[i]=rats);
+starv[i]=0;
+tinyv[i]=0;
+var rats=createDiv(5, 5);
+rats.style.backgroundColor="transparent";
+rats.style.visibility="hidden";
+var rlef=createDiv(1, 5);
+var rdow=createDiv(5, 1);
+rats.appendChild(rlef);
+rats.appendChild(rdow);
+rlef.style.top="2px";
+rlef.style.left="0px";
+rdow.style.top="0px";
+rdow.style.left="2px";
+document.body.appendChild(star[i]=rats);
+}
+set_width();
+sparkle();
+}}
+function sparkle() {
+var c;
+if (x!=ox || y!=oy) {
+ox=x;
+oy=y;
+for (c=0; c<sparkles; c++) if (!starv[c]) {
+star[c].style.left=(starx[c]=x)+"px";
+star[c].style.top=(stary[c]=y)+"px";
+star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+star[c].style.visibility="visible";
+starv[c]=50;
+break;
+}
+}
+for (c=0; c<sparkles; c++) {
+if (starv[c]) update_star(c);
+if (tinyv[c]) update_tiny(c);
+}
+setTimeout("sparkle()", 40);
+}
+function update_star(i) {
+if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+if (starv[i]) {
+stary[i]+=1+Math.random()*3;
+if (stary[i]<shigh+sdown) {
+star[i].style.top=stary[i]+"px";
+starx[i]+=(i%5-2)/5;
+star[i].style.left=starx[i]+"px";
+}
+else {
+star[i].style.visibility="hidden";
+starv[i]=0;
+return;
+}
+}
+else {
+tinyv[i]=50;
+tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+tiny[i].style.width="2px";
+tiny[i].style.height="2px";
+star[i].style.visibility="hidden";
+tiny[i].style.visibility="visible"
+}
+}
+function update_tiny(i) {
+if (--tinyv[i]==25) {
+tiny[i].style.width="1px";
+tiny[i].style.height="1px";
+}
+if (tinyv[i]) {
+tinyy[i]+=1+Math.random()*3;
+if (tinyy[i]<shigh+sdown) {
+tiny[i].style.top=tinyy[i]+"px";
+tinyx[i]+=(i%5-2)/5;
+tiny[i].style.left=tinyx[i]+"px";
+}
+else {
+tiny[i].style.visibility="hidden";
+tinyv[i]=0;
+return;
+}
+}
+else tiny[i].style.visibility="hidden";
+}
+document.onmousemove=mouse;
+function mouse(e) {
+set_scroll();
+y=(e)?e.pageY:event.y+sdown;
+x=(e)?e.pageX:event.x+sleft;
+}
+function set_scroll() {
+if (typeof(self.pageYOffset)=="number") {
+sdown=self.pageYOffset;
+sleft=self.pageXOffset;
+}
+else if (document.body.scrollTop || document.body.scrollLeft) {
+sdown=document.body.scrollTop;
+sleft=document.body.scrollLeft;
+}
+else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+sleft=document.documentElement.scrollLeft;
+sdown=document.documentElement.scrollTop;
+}
+else {
+sdown=0;
+sleft=0;
+}
+}
+window.onresize=set_width;
+function set_width() {
+if (typeof(self.innerWidth)=="number") {
+swide=self.innerWidth;
+shigh=self.innerHeight;
+}
+else if (document.documentElement && document.documentElement.clientWidth) {
+swide=document.documentElement.clientWidth;
+shigh=document.documentElement.clientHeight;
+}
+else if (document.body.clientWidth) {
+swide=document.body.clientWidth;
+shigh=document.body.clientHeight;
+}
+}
+function createDiv(height, width) {
+var div=document.createElement("div");
+div.style.position="absolute";
+div.style.height=height+"px";
+div.style.width=width+"px";
+div.style.overflow="hidden";
+div.style.backgroundColor=colour;
+return (div);
+}
+// ]]>
+</script>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {background-image: url(http://st.gde-fon.com/wallpapers_original/368279_tumannost_sozvezdie_planety_zvezdy_art_1920x1200_www.Gde-Fon.com.jpg);
+}
+-->
+</style></head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
